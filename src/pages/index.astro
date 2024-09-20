@@ -2,13 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import { Button } from '../components/Button';
+import {ShoppingWeek} from '../components/ShoppingWeek';
+const buyList = [
+	'controller',
+	'Bread',
+	'Water',
+	'Notebook',
+	'Math Book',
+	'Choco Bar',
+	'Milk'
+];
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1 style="text-align: center;">LABORATORIO 6</h1>
-		<h1>Contador</h1>
-		<Button client:load/>
+		<h1>Compras de la Semana</h1>
+		<ShoppingWeek buyList={buyList}/>
 	</main>
 </Layout>
 
