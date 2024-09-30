@@ -12,13 +12,13 @@ const buyList = [
 	'Choco Bar',
 	'Milk'
 ];
+import {Cards} from '../components/Cards';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1 style="text-align: center;">LABORATORIO 6</h1>
-		<h1>Compras de la Semana</h1>
-		<ShoppingWeek buyList={buyList}/>
+		<Cards client:load/>
 	</main>
 </Layout>
 
